@@ -29,8 +29,8 @@
 #define FUNC_I2C_EN     (1)
 #define I2C_NUM         (0)
 #define I2C_CLK         (600000)
-#define GPIO_I2C_SCL    (GPIO_NUM_20)
-#define GPIO_I2C_SDA    (GPIO_NUM_21)
+#define GPIO_I2C_SCL    (GPIO_NUM_14)
+#define GPIO_I2C_SDA    (GPIO_NUM_15)
 
 /**
  * @brief On-chip LDO channel ID, e.g. set to `4` is the `LDO_VO4` is connected to power the SDMMC IO
@@ -46,12 +46,12 @@
  */
 #define FUNC_SDMMC_EN   (1)
 #define SDMMC_BUS_WIDTH (4)
-#define GPIO_SDMMC_CLK  (GPIO_NUM_43)
-#define GPIO_SDMMC_CMD  (GPIO_NUM_44)
-#define GPIO_SDMMC_D0   (GPIO_NUM_39)
-#define GPIO_SDMMC_D1   (GPIO_NUM_40)
-#define GPIO_SDMMC_D2   (GPIO_NUM_41)
-#define GPIO_SDMMC_D3   (GPIO_NUM_42)
+#define GPIO_SDMMC_CLK  (GPIO_NUM_19)
+#define GPIO_SDMMC_CMD  (GPIO_NUM_16)
+#define GPIO_SDMMC_D0   (GPIO_NUM_18)
+#define GPIO_SDMMC_D1   (GPIO_NUM_17)
+#define GPIO_SDMMC_D2   (GPIO_NUM_20)
+#define GPIO_SDMMC_D3   (GPIO_NUM_21)
 #define GPIO_SDMMC_DET  (GPIO_NUM_NC)
 
 /**
@@ -70,11 +70,11 @@
  * 
  */
 #define FUNC_I2S_EN         (1)
-#define GPIO_I2S_LRCK       (GPIO_NUM_48)
-#define GPIO_I2S_MCLK       (GPIO_NUM_46)
-#define GPIO_I2S_SCLK       (GPIO_NUM_47)
-#define GPIO_I2S_SDIN       (GPIO_NUM_51)
-#define GPIO_I2S_DOUT       (GPIO_NUM_45)
+#define GPIO_I2S_LRCK       (GPIO_NUM_27)
+#define GPIO_I2S_MCLK       (GPIO_NUM_30)
+#define GPIO_I2S_SCLK       (GPIO_NUM_29)
+#define GPIO_I2S_SDIN       (GPIO_NUM_28)
+#define GPIO_I2S_DOUT       (GPIO_NUM_26)
 
 /**
  * @brief ESP32-P4-FUNCTION-EV I2S GPIO defination
@@ -101,7 +101,7 @@
  * 
  */
 #define FUNC_PWR_CTRL       (1)
-#define GPIO_PWR_CTRL       (GPIO_NUM_53)
+#define GPIO_PWR_CTRL       (GPIO_NUM_10)
 #define GPIO_PWR_ON_LEVEL   (1)
 
 #if ESP_IDF_VERSION >= ESP_IDF_VERSION_VAL(5, 0, 0)

@@ -148,7 +148,7 @@ void detect_Task(void *arg)
 void app_main()
 {
     models = esp_srmodel_init("model");
-    ESP_ERROR_CHECK(esp_board_init(16000, 1, 16));
+    ESP_ERROR_CHECK(esp_board_init(16000, 2, 16));
     // ESP_ERROR_CHECK(esp_sdcard_init("/sdcard", 10));
 
 
@@ -157,10 +157,10 @@ void app_main()
 
     afe_config.wakenet_model_name = esp_srmodel_filter(models, ESP_WN_PREFIX, NULL);;
 #if CONFIG_ESP32_S3_EYE_BOARD || CONFIG_ESP32_P4_FUNCTION_EV_BOARD
-    afe_config.pcm_config.total_ch_num = 2;
-    afe_config.pcm_config.mic_num = 1;
+    afe_config.pcm_config.total_ch_num = 3;
+    afe_config.pcm_config.mic_num = 2;
     afe_config.pcm_config.ref_num = 1;
-    afe_config.wakenet_mode = DET_MODE_90;
+    afe_config.wakenet_mode = DET_MODE_2CH_90;
 #endif
     afe_data = afe_handle->create_from_config(&afe_config);
 
