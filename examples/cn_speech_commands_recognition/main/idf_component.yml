@@ -1,3 +1,4 @@
 dependencies:
   espressif/esp-sr: ">=1.9.0"
   espressif/led_strip: "^2.5.0"
+  lvgl/lvgl: "^8"
